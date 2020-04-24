@@ -1,26 +1,56 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const Cell = () => {
+  return <td></td>;
+};
+
+const Board = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <table>
+      <tr>
+        <Cell />
+        <Cell />
+        <Cell />
+      </tr>
+      <tr>
+        <Cell />
+        <Cell />
+        <Cell />
+      </tr>
+      <tr>
+        <Cell />
+        <Cell />
+        <Cell />
+      </tr>
+    </table>
   );
-}
+};
+
+const App = () => {
+  return (
+    <>
+      <h1>Tic Tak Toe</h1>
+      {/* <table>
+        <tr>
+          <td></td>
+          <td class="vertical"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="horizontal"></td>
+          <td class="vertical horizontal"></td>
+          <td class="horizontal"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="vertical"></td>
+          <td></td>
+        </tr>
+      </table> */}
+      <Board />
+    </>
+  );
+};
 
 export default App;
