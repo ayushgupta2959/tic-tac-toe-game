@@ -1,10 +1,17 @@
+.container {
+  width: 60%;
+  margin: auto;
+  
+}
+
 h1 {
-  font-size: 6em;
+  font-size: 5em;
   text-align: center;
 }
 
 table {
   margin: auto;
+  margin-bottom: 2em;
 }
 
 td {
@@ -20,4 +27,37 @@ td {
 .horizontal {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
+}
+
+.status {
+  border: 1px black solid;
+  padding: 4% 8%;
+  margin-top: 1.5em;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1em;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.active {
+  color: rgb(255, 217, 0);
+}
+
+[class*='tie'] {
+  color: blue;
+}
+
+[class*='win'] {
+  color: green
+}
+
+.reset {
+  margin: auto;
+  padding: 2% 4%;
+  font-size: 2em;
+  width: 100%;
+  display: block;
+  background-color: red;
+  border: 1px solid black;
 }
