@@ -16,6 +16,8 @@ table {
 td {
   width: 100px;
   height: 100px;
+  font-size: 3em;
+  text-align: center;
 }
 
 .vertical {
@@ -30,7 +32,8 @@ td {
 
 .status {
   border: 1px black solid;
-  padding: 4% 8%;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
   margin-top: 1.5em;
   text-align: center;
   margin: auto;
@@ -39,7 +42,7 @@ td {
   text-transform: uppercase;
 }
 
-.active {
+[class*='turn'] {
   color: rgb(255, 217, 0);
 }
 
