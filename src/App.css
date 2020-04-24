@@ -1,11 +1,10 @@
 .container {
-  width: 60%;
+  width: 50%;
   margin: auto;
-  
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 4em;
   text-align: center;
 }
 
@@ -60,4 +59,17 @@ td {
   display: block;
   background-color: red;
   border: 1px solid black;
+}
+
+/* Mobile Landscape Screen Sizes */
+@media only screen and (min-width: 480px)  {
+  .container {
+    width: 50%;
+  }
+}
+/* Desktop screen Sizes */
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 30%;
+  }
 }
