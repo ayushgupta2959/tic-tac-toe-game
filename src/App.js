@@ -147,9 +147,11 @@ const Status = (props) => {
 };
 
 const Reset = (props) => {
-  return <button className={'reset'}
-    onClick={props.onClick}
-  >Reset</button>;
+  return (
+    <button className={'reset'} onClick={props.onClick}>
+      Reset
+    </button>
+  );
 };
 
 const Game = () => {
@@ -158,7 +160,7 @@ const Game = () => {
     <div className="container">
       <h1>Tic Tac Toe</h1>
       <Board key={gameId} />
-      <Reset onClick={()=>setGameId(1-gameId)}/>
+      <Reset onClick={() => setGameId(1 - gameId)} />
     </div>
   );
 };
